@@ -1,0 +1,21 @@
+Com credenciais (Query String):
+curl "http://127.0.0.1:8000/me?username=admin&password=1234"
+
+Resposta:
+
+{
+  "message": "Olá, admin"
+}
+{
+  "status": "ok"
+}
+
+Com credenciais (Headers);
+curl -H "username: admin" -H "password: 1234" http://127.0.0.1:8000/me
+
+
+Sem credenciais;
+curl http://127.0.0.1:8000/me
+{
+  "detail": "Credenciais inválidas"
+}
