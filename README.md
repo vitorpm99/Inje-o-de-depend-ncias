@@ -25,5 +25,9 @@ Dependências podem:
 
 1. Instale as dependências:
 
-```bash
+`bash
+
 pip install fastapi uvicorn
+Inicie o servidor:
+
+uvicorn main:app --reload
